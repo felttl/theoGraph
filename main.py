@@ -1,34 +1,32 @@
 # import packages
 from random import randint
 
+
 # import local classes
 from Node import Node
 from Graph import Graph
 
 if __name__ == "__main__":
+    # test sur un graphe connu (exo sur les graphe "village") avec sallin et tarjan
+
+# Python program to create an undirected 
+# graph and add nodes and edges to a graph
+
+
 
     graph = Graph([
-        Node("a", ["a", "b", "c", "d"]),
-        Node("b", ["d", "c", "a"]),
-        Node("c", ["a", "b", "d"]),
-        Node("d", ["a", "c", "d"])
+        Node("a", ["c", "e"]),
+        Node("b", ["c", "d", "i", "h"]),
+        Node("c", ["a", "e", "b"]),
+        Node("d", ["b", "e", "f"]),
+        Node("e", ["a", "c", "d", "f"]),
+        Node("f", ["e", "d", "i"]),
+        Node("g", ["h", "i"]),
+        Node("h", ["b", "g"]),
+        Node("i", ["f", "b", "g"])   
     ])
 
-#    exit(0)
-#    # nombre de couche horizontales
-#    nb_layer = randint(1, 6)
-#    # nombre de points par layer
-#    layers = []
-#    for i in range(nb_layer):
-#        layers.append(randint(1, 5))
-#    # construction des layers
-#    names = [chr(layers[i]+65) if i < 26 else str(i%10) for i in range(sum(layers))]
-#    nodes = []
-#    for i in range(layers):
-#        nodes.append([])
-#        for j in range(layers[i]):
-#            nodes[-1].append(Node(names[layers[i][j]]))
-
+    graph.render()
 
 
 # end

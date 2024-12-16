@@ -1,0 +1,37 @@
+digraph {
+	a
+	b
+	c
+	d
+	e
+	f
+	g
+	h
+	i
+	a -> c
+	a -> e
+	b -> c
+	b -> d
+	b -> i
+	b -> h
+	c -> a
+	c -> e
+	c -> b
+	d -> b
+	d -> e
+	d -> f
+	e -> a
+	e -> c
+	e -> d
+	e -> f
+	f -> e
+	f -> d
+	f -> i
+	g -> h
+	g -> i
+	h -> b
+	h -> g
+	i -> f
+	i -> b
+	i -> g
+}
