@@ -9,6 +9,7 @@ RUN apt-get update && apt-get upgrade -y && \
     curl \
     nano \
     vim \
+    tree \
     && apt-get clean
 
 # default path
