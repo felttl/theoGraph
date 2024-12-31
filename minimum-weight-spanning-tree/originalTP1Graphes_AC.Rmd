@@ -1,0 +1,68 @@
+---
+title: 'TP 1 : Theorie des Graphes 1'
+subtitle: L3 INFO NEC 2024 –2025, Théorie de graphes 1, Université de Pau et des Pays de l’Adour
+output: pdf_document
+date: "2024-12-18"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+
+Sur le logiciel R on va faire le code qui trouve l'arbre couvrant de poids minimale pour une graphe donnée. 
+
+En premier, il faut définir les variables d'entrée: le graphe. Ce graphe est donné par un vecteur des sommets, un matrice des arêtes, et un vecteur des poids. 
+
+Le graphe avec lequel on va tester notre code est simple: On va avoir 6 sommets et ça c'est la liste de sommets adjacentes avec les poids : 
+
+1: 2(2), 3(1)
+2: 1(2), 4(2), 5(3)
+3: 1(1), 2(3), 4(2)
+4: 2(2), 3(5), 5(2), 6(4)
+5: 2(3), 4(2), 6(2)
+6: 4(2), 5(2).
+
+
+```{r}
+sommets<- 
+arets <-
+poids,<-
+}
+```
+
+
+Dés qu'on a les variables d'entrée, on rédige un fonction qui va nous trouver le arbre couvrant de poids minimale sur cette graphe. On veux tester chaque algorithme sur le graphe donné. Conseil, vérifier à la main que l’algorithme donne la bonne réponse. 
+
+Les algorithmes à coder : 
+
+1. Algorithme de Kruskal : Si dans un itération plusieurs arêtes sont possibles, on en prends un choisi uniformément au hasard. 
+
+
+
+```{r}
+function_name <- function(){
+  ...
+}
+```
+
+2. Algorithme de Sallin :
+
+```{r}
+function_name <- function(){
+  ...
+}
+```
+
+3. Algorithme de Prim : Sur la liste de CC en construction, on prends un uniformément au hasard. 
+Pour crée un liste de CC en construction on peux faire un matrice carré de la taille de nombre du sommets. On mets 1 si deux sommets dans le mêmê CC en construction et 0 sinon. 
+```{r}
+function_name <- function(){
+  ...
+}
+```
+
+
+
+
