@@ -1,0 +1,73 @@
+Cycle = circuit
+
+
+
+Algo de calcul de rang : 
+
+R = None
+X = v
+R = set(2,3)
+While x != None:
+	r(v)=0 v dans R -> r(2)=r(3)=0
+	X=X-R={1,4,5,6,7}
+	R={6}
+	r=r+1=1
+Etape 2 :
+While x != None:
+	r(v)=1 v dans R -> r(6)=1
+	X=X-R={1,4,5,6,7,8}
+	R={4}
+	r+=1 # r=2
+While x != None:
+	r(v)=2 fléche r(4)=2
+	X=X-R={1,4,5,6,7,8}
+	R={1,5}
+	r+=1 # r=3
+While x != None:
+	r(1)=r(5)=3
+	X=X-R={7,8}
+	R={7,8}
+	r+=1 # r=4
+While x != None:
+	r(v)=7 fléche r(8)=4
+	X=X-R=None
+	R=None
+	r+=1 # r=5
+
+While x != None: False # on s'arrête
+
+Voir Learn "introduction au graphe orienté partie 1"
+
+
+
+Démonstration par l'absurde Principe d'optimisation de Bellman
+
+Exemple: 
+
+	supposons q'on a un chemin opt de i a j (violet) avec un sous-chemin non optimal
+
+	pour aller de A a B, (A,B) n'est pas opti
+
+	(note pour moi : comme on peut pas noter C avec une barre au dessus on note Ć)
+
+	(A,D,B) est opti
+-> C*(i,j)(violet) le chemin optimal de i a j. C(A,B); la partie du chemin opt entre Cet B n'est pas optimal
+	Il existe un chemin opti entre A et B, qui est C*(A,B)(rouge) -> P(C*(A,B))<P(C(A,B))=>P(C*(A,B))-P(C(A,B))<0
+Créer un nouveau chemin,Ć(i,j)=[C*(i,j)\C(A,B)]U[C*(A,B)](bleu)
+				"partie non-opti". "Partie opti"
+Poids de Ć(i,j) : P(C(i,j))=P(C*(i,j))-P(C(A,B))+P(C*(A,B))<P(C*(i,j))=>C*(i,j) n'est pas optimal finalement
+	( P(C(A,B))+P(C*(A,B)) )=0 "W+(-2)=W-2<W"				C(i,j) C'est avec tout sous chemin optimal
+
+Pour k=2,...,n-1:
+	pour tout somme i:
+		Pk(1,i)=min(Pk-1(1,i),min(Pk-1(1,j)+pji))
+	fin
+Fin
+# Pk-1(1,i) la longueur minimal (du chemin 1 a i en k arc au plus)
+# ici le k de Pk est en indice
+
+FAIRE UN FICHIER MARKDOWN POUR LIRE LES MATHS
+
+
+
+# end
