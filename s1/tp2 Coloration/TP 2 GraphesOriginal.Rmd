@@ -1,0 +1,51 @@
+---
+title: 'TP 2 : Theorie des Graphes 1'
+subtitle: L3 INFO NEC 2024 –2025, Théorie de graphes 1, Université de Pau et des Pays de l’Adour
+output: pdf_document
+date: "2024-12-18"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+Le sujet de ce TP est la coloration des graphes. Sur le logiciel R on va faire le code qui nous donne la coloration de un graphe donnée par l'algorithme de coloration de Welsh et Powel.
+
+En premier, il faut définir les variables d'entrée: le graphe. Ce graphe est donné par un vecteur avec des sommets et un matrice des arêtes.
+
+
+Le graphe avec lequel on va tester notre code est simple: On va avoir 10 sommets et ça c'est la liste de sommets adjacentes : 
+
+1: 2, 3
+2: 1, 4
+3: 1, 4, 6
+4: 2, 3, 5, 7
+5: 4, 7, 9
+6: 3, 7, 10
+7: 4, 5, 6, 8, 10
+8: 7, 9, 10
+9: 5, 8, 10
+10: 6, 7, 8, 9
+
+
+```{r}
+sommets<- 
+arets <-
+}
+```
+
+
+Dés qu'on a les variables d'entrée, on rédige un fonction qui va donner comment réponse: 
+1. la coloration de cette graphe,
+2. le nombre des couleurs pour cette coloration. 
+3. les nombres majorant de nombre chromatique. 
+
+Nous allons tester l'algorithme sur le graphe donné. Conseil, vérifier à la main que l'algorithme donne la bonne réponse. 
+
+
+```{r}
+function_name <- function(){
+  ...
+}
+```
