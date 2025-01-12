@@ -29,7 +29,6 @@ Le graphe avec lequel on va tester notre code est simple: On va avoir 6 sommets 
 sommets<- 
 arets <-
 poids,<-
-}
 ```
 
 
