@@ -10,12 +10,15 @@ knitr::opts_chunk$set(echo = TRUE)
 ```
 
 ## R Markdown
-Le sujet de ce TP est la coloration des graphes. Sur le logiciel R on va faire le code qui nous donne la coloration de un graphe donnée par l'algorithme de coloration de Welsh et Powel.
+Le sujet de ce TP est la coloration des graphes. Sur le logiciel R on va faire le code 
+qui nous donne la coloration de un graphe donnée par l'algorithme de coloration de Welsh et Powel.
 
-En premier, il faut définir les variables d'entrée: le graphe. Ce graphe est donné par un vecteur avec des sommets et un matrice des arêtes.
+En premier, il faut définir les variables d'entrée: le graphe. Ce graphe est 
+donné par un vecteur avec des sommets et un matrice des arêtes.
 
 
-Le graphe avec lequel on va tester notre code est simple: On va avoir 10 sommets et ça c'est la liste de sommets adjacentes : 
+Le graphe avec lequel on va tester notre code est simple: On va avoir 10 sommets 
+et ça c'est la liste de sommets adjacentes : 
 
 1: 2, 3
 2: 1, 4
@@ -41,7 +44,8 @@ Dés qu'on a les variables d'entrée, on rédige un fonction qui va donner comme
 2. le nombre des couleurs pour cette coloration. 
 3. les nombres majorant de nombre chromatique. 
 
-Nous allons tester l'algorithme sur le graphe donné. Conseil, vérifier à la main que l'algorithme donne la bonne réponse. 
+Nous allons tester l'algorithme sur le graphe donné. Conseil, vérifier à la main que 
+l'algorithme donne la bonne réponse. 
 
 
 ```{r}
