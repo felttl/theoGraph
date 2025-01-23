@@ -447,7 +447,6 @@ class Graph(Graph):
             visited.add(self.edges[0].b)
             res.append(self.edges[0])
             cpt = 0
-            self.sm:str=""
             while(cpt < len(self.edges)):
                 current = self.edges[cpt]
                 if(current.a not in visited and current.b in visited):
@@ -494,7 +493,7 @@ class Graph(Graph):
 
         return edges
     
-    # rendu graphique optionel
+    # rendu graphique optionnel
     def _prim(self, path:list[str]):
         '''fonction reccursive de l'algorithme de primm
         @version 2.0.0'''
