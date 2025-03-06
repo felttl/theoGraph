@@ -435,13 +435,17 @@ class Graph(Graph):
         # trie les arrêtes de tout le graphe par poids croissants
         self.sort_by_weight()
         res : list[Edge] = []
+        ok : bool = True
         if(self.is_oriented):
+            ok=False
             raise NotImplemented("kruskal's algorithm not implemented yet for oriented graphs")
         if(red_tarjan_rule):
+            ok=False
             raise NotImplemented("red tarjan rule not implemented yet")        
         if(len(self.adj)<3):
+            ok=False
             raise Exception(f"under minimum required data ({len(self.adj)} vertices < 3)")
-        else:
+        if ok:
             self.poids_total : int | float = self.edges[0].weight
             visited = set(self.edges[0].a)
             visited.add(self.edges[0].b)
